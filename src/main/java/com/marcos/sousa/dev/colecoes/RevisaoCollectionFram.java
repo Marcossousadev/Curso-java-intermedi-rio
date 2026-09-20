@@ -94,6 +94,18 @@ public class RevisaoCollectionFram {
         // criando uma fila
         Queue<String> fila_Strings = new LinkedList<>();
 
+        // quando eu crio uma fila tipando ela como LinkedList, eu tenho acesso a mais métodos
+        LinkedList<String> names_cllrs = new LinkedList<>();
+
+        // manipulando lista
+        names_cllrs.addFirst("samsung"); // mais um método novo
+        names_cllrs.addLast("Iphone");
+        // String é uma classe utilitária do java, não um tipo primário
+        String first_cllrs = names_cllrs.getFirst();
+        String last_cllrs = names_cllrs.getLast();
+
+        System.out.println("Primeiro item lista cllrs: " + first_cllrs);
+        System.out.println("Último item lista cllrs: " + last_cllrs);
         // adicionando valores a essa fila
         fila_Strings.add("Marcos");
         fila_Strings.add("Gisele");
