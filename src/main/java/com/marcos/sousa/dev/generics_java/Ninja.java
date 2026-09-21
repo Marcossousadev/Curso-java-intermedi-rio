@@ -17,6 +17,5 @@ public class Ninja {
         bolsa.adicionar_ferramenta(new CompanheiroNinja("Mamaru"));
         System.out.println("Itens da bolsa Ninja: ");
         bolsa.mostrarFerramentas();
-
     }
 }
