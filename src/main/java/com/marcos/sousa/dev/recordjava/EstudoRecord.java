@@ -30,7 +30,24 @@ public class EstudoRecord {
         // POJOs = plain old java objects
         // POJOs são objetos comuns do Java, que são criados através de classes mutáveis
 
+        // exemplo DTO User
+        // Record são dados imutáveis
+        DTOUser user = new DTOUser("38193919090djamdma", "Marcos", 19);
 
+        //os records nós forncecem por padrão os getters
+        System.out.println("User id: " + user.id());
+        System.out.println("User nome: " + user.nome());
+        System.out.println("User idade: " + user.idade());
+
+        // nós fornece também hashCode, equals e toString
+
+        // muito usados em DTOs = Data Transfer Objects
+        // os DTOs tem por função apenas transmitir dados e não alterar nada
+        // usado também em POJOs = pail old java objects
+
+        // diferenças de uma classe normal para um record?
+        // classes normais podem modificar seus atríbutos
+        // no record não, valores não podem ser alterados
     }
 }
 
