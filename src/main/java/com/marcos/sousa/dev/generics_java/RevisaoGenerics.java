@@ -29,5 +29,22 @@ public class RevisaoGenerics {
         UtilRevisao.imprimir(true);
         UtilRevisao.imprimir('A');
         UtilRevisao.imprimir(20.55f);
+
+        // exemplo do que Generics resolve para Listas
+        // exemplo
+        // se eu tiver construindo um sistema para loja automóveis
+        // onde eu teria Motos e Carros e Jetski
+        // se eu precisa-se criar listas para cadas uns desses tipos de automóveis
+        // List<Carro> carros = new ArrayList<>();
+        // List<Moto> motos = new ArrayList<>();
+        // List<JetSki> jetskis = new ArrayList<>();
+        // se eu fosse cria cada vez uma lista para um novo tipo de automóvel
+        // isso acabaria com a nossa escalabilidade
+
+        // a forma de resolver isso é criar uma bolsa genéricas
+        // disso que vem o nome Generics
+
+
+
     }
 }
